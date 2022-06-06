@@ -6,17 +6,15 @@
 - Real time chat engine for comments
 -Blog
 -Portfolio
--Drag and drop omterface
+-Drag and drop interface
 
 ### Code Example
 
- ```
- def my_great_method
+ ```def my_great_method
     puts "here it is"
  end
 ```
 
-```
- JavaScript
+```JavaScript
 alert('Hi There')
 ```
