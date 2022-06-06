@@ -10,7 +10,8 @@
 
 ### Code Example
 
- ```def my_great_method
+ ```Ruby
+ def my_great_method
     puts "here it is"
  end
 ```
