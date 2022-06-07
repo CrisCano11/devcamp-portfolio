@@ -19,8 +19,23 @@ def create
         format.html { render :new, status: :unprocessable_entity }
         
       end
-    end
+    end    
+end
+
+def edit
+    @portfolio_items = Portfolio.find(params[:id])
     
 end
+def update
+    respond_to do |format|
+        if @portfolio_items.update(params.require(:portfolio).permit(:title,:subtitle,:body))
+            format.html{redirect_to portfolios_path, notice: 'the record successfully update'}
+        else
+            format.html{render :edit}
+        end
+    end    
+end
+
+
 
 end
