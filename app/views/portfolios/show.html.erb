@@ -6,5 +6,14 @@
 <h1><%= @portfolio_items.title%></h1>
 <em><%= @portfolio_items.subtitle%></em> 
 <p><%= @portfolio_items.body%></p> 
+
+<h2>Technologies Use</h2>  
+
+<% @portfolio_items.technologies.each do |t| %>
+
+<p><%= t.name%></p>
+
+<% end %>
+
    
 <%= link_to "Edit", edit_portfolio_path(@portfolio_items.id)%>
