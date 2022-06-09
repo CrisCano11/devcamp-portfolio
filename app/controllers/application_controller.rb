@@ -4,5 +4,7 @@ include DeviseWhitelist
 
 include SetSource
 
+include DefaultPageContent
+
     
 end
