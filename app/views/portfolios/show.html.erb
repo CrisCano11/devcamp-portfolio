@@ -16,5 +16,5 @@
 <% end %>
 
    
-<%= link_to "Edit", edit_portfolio_path(@portfolio_items.id)%>
+<%= link_to "Edit", edit_portfolio_path(@portfolio_items.id) if logged_in?(:admin, :customer, :etc)%>
 
