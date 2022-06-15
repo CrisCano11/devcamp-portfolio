@@ -5,6 +5,8 @@ include DeviseWhitelist
 include SetSource
 
 include DefaultPageContent
+include CurrentUserConcern
+
 before_action :set_copyright
 
 def set_copyright
