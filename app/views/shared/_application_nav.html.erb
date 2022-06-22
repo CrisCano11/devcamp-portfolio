@@ -1,7 +1,7 @@
  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Hi <%= current_user.first_name if current_user %></h3>
+          <h3 class="masthead-brand">Hi <%= current_user.first_name if current_user %>  </h3>
           <nav class="nav nav-masthead justify-content-center">
             <%= link_to "Home", root_path, class: 'nav-link' %>
             <%= link_to "About", about_path, class: 'nav-link'%>
